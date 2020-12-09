@@ -1,7 +1,16 @@
-$blue: #0f59a4;
-$red: #de1c31;
-$yellow: #ffc90c;
-$gray: #e4dfd7;
-$green: #41b349;
-$white: #ffffff;
-$black: #161824;
+$blue: #0f59a4 !default;
+$red: #de1c31 !default;
+$yellow: #ffc90c !default;
+$gray: #e4dfd7 !default;
+$green: #41b349 !default;
+$white: #ffffff !default;
+$black: #161824 !default;
+
+
+// 字体系统
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+'Noto Color Emoji' !default;
+
+$font-family-monospace: $font-family-sans-serif !default;
+$font-family-basic: $font-family-sans-serif !default;
