@@ -1,0 +1,33 @@
+.tm-btn {
+    position: relative;
+    display: inline-block;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: $border-width solid transparent;
+    border-radius: $border-radius;
+    white-space: nowrap;
+    padding: $btn-padding;
+    cursor: pointer;
+    &.tm-btn__default {
+        background: transparent;
+        border-color: $gray;
+        color: $black;
+    }
+    &.tm-btn__primary {
+        background: $blue;
+    }
+    &.tm-btn__success {
+        background: $green;
+    }
+    &.tm-btn__warning {
+        background: $yellow;
+    }
+    &.tm-btn__danger {
+        background: $red;
+    }
+}
