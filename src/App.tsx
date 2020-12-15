@@ -15,6 +15,7 @@ function App() {
         <Button type={ ButtonType.Success }>Success</Button>
         <Button type={ ButtonType.Warning }>Warning</Button>
         <Button type={ ButtonType.Danger }>Danger</Button>
+        <Button type={ ButtonType.Link }>Link</Button>
       </div>
       {/* <Button disabled={true} type={ ButtonType.Primary } size={ ButtonSize.Normal }>点击我</Button>
       <Button disabled={true} type={ ButtonType.Link }>点击我</Button> */}

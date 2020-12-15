@@ -13,6 +13,13 @@
     white-space: nowrap;
     padding: $btn-padding;
     cursor: pointer;
+    transition: $btn-transition;
+    &:hover {
+        opacity: $btn-hover-opacity;
+    }
+    &:active {
+        opacity: $btn-active-opacity;
+    }
     &.tm-btn__default {
         background: transparent;
         border-color: $gray;
@@ -29,5 +36,8 @@
     }
     &.tm-btn__danger {
         background: $red;
+    }
+    &.tm-btn__link {
+        color: $blue;
     }
 }
