@@ -3,7 +3,7 @@ import './styles/index.scss';
 // import './App.css';
 
 // import Hello from './Hello'
-import Button, { ButtonSize, ButtonType } from './components/Button/Button'
+import Button, { ButtonSize, ButtonType } from './components/Button/button'
 import Color from './components/Color/Color'
 
 function App() {
@@ -17,9 +17,6 @@ function App() {
         <Button type={ ButtonType.Danger }>Danger</Button>
         <Button type={ ButtonType.Link }>Link</Button>
       </div>
-      {/* <Button disabled={true} type={ ButtonType.Primary } size={ ButtonSize.Normal }>点击我</Button>
-      <Button disabled={true} type={ ButtonType.Link }>点击我</Button> */}
-      {/* <Color></Color> */}
     </div>
   );
 }
