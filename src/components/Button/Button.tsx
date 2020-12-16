@@ -55,7 +55,8 @@ const Button: React.FC<ButtonTypes> = props => {
     size,
     type,
     children,
-    href
+    href,
+    ...restProps
   } = props
 
   const classes = classnames('tm-btn', className, {
@@ -66,7 +67,7 @@ const Button: React.FC<ButtonTypes> = props => {
 
   if (type === ButtonType.Link) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} {...restProps}>
         { children}
       </a>
     )
@@ -75,6 +76,7 @@ const Button: React.FC<ButtonTypes> = props => {
       <button
         className={classes}
         disabled={disabled}
+        {...restProps}
       >
         { children}
       </button>
