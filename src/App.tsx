@@ -9,6 +9,7 @@ import Color from './components/Color/Color'
 function App() {
   return (
     <div className="App">
+      <h1>React</h1>
       <div style={{margin: 10}}>
         <Button>Default</Button>
         <Button type={ ButtonType.Primary }>Primary</Button>
