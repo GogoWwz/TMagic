@@ -28,8 +28,8 @@ export enum ButtonSize {
 
 // Button基础属性
 export interface BaseButtonProps {
-  type?: ButtonType,
-  size?: ButtonSize,
+  type?: "default" | "primary" | "success" | "warning" | "danger" | "link",
+  size?: "large" | "normal" | "small",
   className?: string,
   disabled?: boolean,
   href?: string
