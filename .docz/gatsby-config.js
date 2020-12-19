@@ -61,7 +61,7 @@ const config = {
         title: 'TMagic',
         description: 'My awesome app using docz',
         host: 'localhost',
-        port: 3001,
+        port: 3000,
         p: 3000,
         separator: '-',
         paths: {
