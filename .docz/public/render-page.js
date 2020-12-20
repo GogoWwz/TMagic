@@ -4088,11 +4088,13 @@ var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scop
 
 var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/08de4b536fc0bf2457c533182117e24d.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/08de4b536fc0bf2457c533182117e24d.js").default;
 
-var scope_2 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
+var scope_2 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js").default;
 
-var scope_3 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js").default;
+var scope_3 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
 
-var __DOCZ_DUMMY_EXPORT_DEFAULT = Object.assign({}, scope_0, scope_1, scope_2, scope_3);
+var scope_4 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js").default;
+
+var __DOCZ_DUMMY_EXPORT_DEFAULT = Object.assign({}, scope_0, scope_1, scope_2, scope_3, scope_4);
 
 /* harmony default export */ __webpack_exports__["default"] = (__DOCZ_DUMMY_EXPORT_DEFAULT);
 
@@ -5662,6 +5664,39 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 /***/ }),
 
+/***/ "../src/components/Alert/alert.tsx":
+/*!*****************************************!*\
+  !*** ../src/components/Alert/alert.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.esm.js");
+
+
+
+var Alert = function Alert(props) {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", null, "Alert");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Alert);
+
+if (typeof Alert !== 'undefined' && Alert && Alert === Object(Alert) && Object.isExtensible(Alert) && !Alert.hasOwnProperty('__filemeta')) {
+  Object.defineProperty(Alert, '__filemeta', {
+    configurable: true,
+    value: {
+      name: "Alert",
+      filename: "src/components/Alert/alert.tsx"
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "../src/components/Button/button.tsx":
 /*!*******************************************!*\
   !*** ../src/components/Button/button.tsx ***!
@@ -6162,6 +6197,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   Button: _src_components_Button_button_tsx__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_components_Alert_alert_tsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../src/components/Alert/alert.tsx */ "../src/components/Alert/alert.tsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  Alert: _src_components_Alert_alert_tsx__WEBPACK_IMPORTED_MODULE_0__["default"],
   React: react__WEBPACK_IMPORTED_MODULE_1__
 });
 

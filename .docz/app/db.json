@@ -70,6 +70,21 @@
         "slug": "src-components-button-button",
         "headings": []
       }
+    },
+    {
+      "key": "src/components/Alert/alert.mdx",
+      "value": {
+        "name": "Alert",
+        "route": "/Feedback Components/Alert",
+        "menu": "Feedback Components",
+        "id": "9b60fa173b3cacd70069f890fb9ebe20",
+        "filepath": "src/components/Alert/alert.mdx",
+        "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Alert\\alert.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-alert-alert",
+        "headings": []
+      }
     }
   ],
   "props": []
