@@ -57,6 +57,21 @@
       }
     },
     {
+      "key": "src/components/Alert/alert.mdx",
+      "value": {
+        "name": "Alert",
+        "route": "/Feedback Components/Alert",
+        "menu": "Feedback Components",
+        "id": "9b60fa173b3cacd70069f890fb9ebe20",
+        "filepath": "src/components/Alert/alert.mdx",
+        "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Alert\\alert.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-alert-alert",
+        "headings": []
+      }
+    },
+    {
       "key": "src/components/Button/button.mdx",
       "value": {
         "name": "Button",
@@ -72,17 +87,17 @@
       }
     },
     {
-      "key": "src/components/Alert/alert.mdx",
+      "key": "src/components/Icon/icon.mdx",
       "value": {
-        "name": "Alert",
-        "route": "/Feedback Components/Alert",
-        "menu": "Feedback Components",
-        "id": "9b60fa173b3cacd70069f890fb9ebe20",
-        "filepath": "src/components/Alert/alert.mdx",
-        "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Alert\\alert.mdx",
+        "name": "Icon",
+        "route": "/Base Components/Icon",
+        "menu": "Base Components",
+        "id": "364dc3ee98c5d08e8c76b8a2fc2f35ad",
+        "filepath": "src/components/Icon/icon.mdx",
+        "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Icon\\icon.mdx",
         "link": "",
         "hidden": false,
-        "slug": "src-components-alert-alert",
+        "slug": "src-components-icon-icon",
         "headings": []
       }
     }

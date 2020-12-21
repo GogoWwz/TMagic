@@ -4,6 +4,8 @@ import './styles/index.scss';
 
 // import Hello from './Hello'
 import Button, { ButtonSize, ButtonType } from './components/Button/button'
+import Icon from './components/Icon/icon'
+import { ReactComponent as Close } from './assets/icons/close.svg'
 import Color from './components/Color/Color'
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
         <Button type={ ButtonType.Warning }>Warning</Button>
         <Button type={ ButtonType.Danger }>Danger</Button>
         <Button type={ ButtonType.Link }>Link</Button>
+      </div>
+      <div>
+        <Icon name="close" color="#ff0000" size="16" />
       </div>
     </div>
   );
