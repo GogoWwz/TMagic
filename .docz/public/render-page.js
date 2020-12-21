@@ -4090,11 +4090,13 @@ var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scop
 
 var scope_2 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/cf68e38760e9cf0f0c75d23e4c46ce0e.js").default;
 
-var scope_3 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
+var scope_3 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e6cce60ca58434246ee2402dc729b713.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e6cce60ca58434246ee2402dc729b713.js").default;
 
-var scope_4 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js").default;
+var scope_4 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e92f8988d65cf25c087d226e6c0ef06f.js").default;
 
-var __DOCZ_DUMMY_EXPORT_DEFAULT = Object.assign({}, scope_0, scope_1, scope_2, scope_3, scope_4);
+var scope_5 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/f2a2c72cafc64e13d25e48b3cb59a3b1.js").default;
+
+var __DOCZ_DUMMY_EXPORT_DEFAULT = Object.assign({}, scope_0, scope_1, scope_2, scope_3, scope_4, scope_5);
 
 /* harmony default export */ __webpack_exports__["default"] = (__DOCZ_DUMMY_EXPORT_DEFAULT);
 
@@ -5664,6 +5666,17 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 /***/ }),
 
+/***/ "../src/assets/icons/close.svg":
+/*!*************************************!*\
+  !*** ../src/assets/icons/close.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjA4NDUxMTkzNjUxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEwNzAiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjUzLjk2OCAyOTYuNzJsNDEuNTUyLTQyLjE2IDQ3OC4zMzYgNDcxLjUyLTQxLjU1MiA0Mi4xNzZ6IiBwLWlkPSIxMDcxIj48L3BhdGg+PHBhdGggZD0iTTI1Ny4wNTYgNzI5Ljc5Mmw0NzEuNTUyLTQ3OC4zMzYgNDIuMTQ0IDQxLjU1Mi00NzEuNTIgNDc4LjMzNnoiIHAtaWQ9IjEwNzIiPjwvcGF0aD48L3N2Zz4="
+
+/***/ }),
+
 /***/ "../src/components/Alert/alert.tsx":
 /*!*****************************************!*\
   !*** ../src/components/Alert/alert.tsx ***!
@@ -5847,6 +5860,63 @@ if (typeof Button !== 'undefined' && Button && Button === Object(Button) && Obje
     value: {
       name: "Button",
       filename: "src/components/Button/button.tsx"
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "../src/components/Icon/icon.tsx":
+/*!***************************************!*\
+  !*** ../src/components/Icon/icon.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_icons_close_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/icons/close.svg */ "../src/assets/icons/close.svg");
+/* harmony import */ var _assets_icons_close_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_icons_close_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.esm.js");
+
+
+
+console.log(_assets_icons_close_svg__WEBPACK_IMPORTED_MODULE_1___default.a);
+
+if (typeof IconProps !== 'undefined' && IconProps && IconProps === Object(IconProps) && Object.isExtensible(IconProps) && !IconProps.hasOwnProperty('__filemeta')) {
+  Object.defineProperty(IconProps, '__filemeta', {
+    configurable: true,
+    value: {
+      name: "IconProps",
+      filename: "src/components/Icon/icon.tsx"
+    }
+  });
+}
+
+var Icon = function Icon(props) {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("svg", {
+    width: "100",
+    height: "100",
+    viewBox: "0 0 100 100"
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("path", {
+    d: "M253.968 296.72l41.552-42.16 478.336 471.52-41.552 42.176z",
+    "p-id": "1071"
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("path", {
+    d: "M257.056 729.792l471.552-478.336 42.144 41.552-471.52 478.336z",
+    "p-id": "1072"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Icon);
+
+if (typeof Icon !== 'undefined' && Icon && Icon === Object(Icon) && Object.isExtensible(Icon) && !Icon.hasOwnProperty('__filemeta')) {
+  Object.defineProperty(Icon, '__filemeta', {
+    configurable: true,
+    value: {
+      name: "Icon",
+      filename: "src/components/Icon/icon.tsx"
     }
   });
 }
@@ -6218,6 +6288,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   Alert: _src_components_Alert_alert_tsx__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e6cce60ca58434246ee2402dc729b713.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e6cce60ca58434246ee2402dc729b713.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_components_Icon_icon_tsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../src/components/Icon/icon.tsx */ "../src/components/Icon/icon.tsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  Icon: _src_components_Icon_icon_tsx__WEBPACK_IMPORTED_MODULE_0__["default"],
   React: react__WEBPACK_IMPORTED_MODULE_1__
 });
 
