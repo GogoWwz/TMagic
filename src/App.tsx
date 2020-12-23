@@ -21,7 +21,7 @@ function App() {
         <Button type={ ButtonType.Link }>Link</Button>
       </div>
       <div>
-        <Icon name="close" color="#ff0000" size="16" />
+        <Icon size="42" icon="arrow-down" />
       </div>
     </div>
   );

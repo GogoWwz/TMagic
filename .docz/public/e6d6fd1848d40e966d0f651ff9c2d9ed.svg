@@ -1,0 +1,10 @@
+import SpriteSymbol from "../../../node_modules/svg-baker-runtime/symbol.js";
+import sprite from "../../../node_modules/svg-sprite-loader/runtime/sprite.build.js";
+var symbol = new SpriteSymbol({
+  "id": "icon-close",
+  "use": "icon-close-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-close\"><defs><style type=\"text/css\"></style></defs><path d=\"M253.968 296.72l41.552-42.16 478.336 471.52-41.552 42.176z\" p-id=\"1071\" /><path d=\"M257.056 729.792l471.552-478.336 42.144 41.552-471.52 478.336z\" p-id=\"1072\" /></symbol>"
+});
+var result = sprite.add(symbol);
+export default symbol

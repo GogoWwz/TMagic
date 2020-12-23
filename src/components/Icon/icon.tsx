@@ -1,21 +1,20 @@
 import React from 'react'
-import './index.scss'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
+import { fas } from "@fortawesome/free-solid-svg-icons"
+library.add(fas)
 
-export interface IconProps {
-  name: string,
-  size?: number | string,
-  color?: string,
-  onClick?: React.MouseEvent
+export interface IconProps extends Omit<FontAwesomeIconProps, 'size'> {
+  size?: number | string
 }
 
 const Icon: React.FC<IconProps> = props => {
-  const { name, size, color } = props
+  const { size = 16, ...resProps } = props
   return (
-    <div >
-      <svg className="svg-class" width={size} height={size}>
-        <use xlinkHref={"#icon-" + name} fill={color} />
-      </svg>
-    </div>
+    <FontAwesomeIcon
+      {...resProps}
+      style={{ fontSize: size }}
+    />
   )
 }
 
