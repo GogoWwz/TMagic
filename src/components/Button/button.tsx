@@ -26,10 +26,14 @@ export enum ButtonSize {
   Small = 'small'
 }
 
+// 按钮大小和类型字符串字面量
+type ButtonTypeLimit = "default" | "primary" | "success" | "warning" | "danger" | "link"
+type ButtonSizeLimit = "large" | "normal" | "small"
+
 // Button基础属性
 export interface BaseButtonProps {
-  type?: "default" | "primary" | "success" | "warning" | "danger" | "link",
-  size?: "large" | "normal" | "small",
+  type?: ButtonTypeLimit,
+  size?: ButtonSizeLimit,
   className?: string,
   disabled?: boolean,
   href?: string

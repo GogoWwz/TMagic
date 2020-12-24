@@ -7,6 +7,8 @@ import Button, { ButtonSize, ButtonType } from './components/Button/button'
 import Icon from './components/Icon/icon'
 import { ReactComponent as Close } from './assets/icons/close.svg'
 import Color from './components/Color/Color'
+import svg from './close.svg'
+import Menu, { MenuItem } from './components/Menu/menu'
 
 function App() {
   return (
@@ -22,9 +24,24 @@ function App() {
       </div>
       <div>
         <Icon size="42" icon="arrow-down" />
+          {/* @ts-ignore */}
+          <svg viewBox={svg.viewBox} width="48" height="48" fill="#ff0000">
+            {/* @ts-ignore */}
+            <use xlinkHref={"#" + svg.id} />
+          </svg>
+      </div>
+      <div>
+        <Menu className="custom" mode="horizontal">
+          <MenuItem className="custom" disabled></MenuItem>
+        </Menu>
       </div>
     </div>
   );
+}
+
+Menu.defaultProps = {
+  defaultSeletedKey: 0,
+  mode: "horizontal"
 }
 
 export default App;
