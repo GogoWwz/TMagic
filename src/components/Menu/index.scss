@@ -6,7 +6,7 @@
     line-height: $menu-item-height;
     transition: $menu-item-transition;
     cursor: pointer;
-    &:hover {
+    &:not(.tm-menuitem__disabled):hover {
       color: $blue;
     }
   }
