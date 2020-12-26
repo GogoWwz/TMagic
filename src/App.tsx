@@ -31,8 +31,10 @@ function App() {
           </svg>
       </div>
       <div>
-        <Menu className="custom" mode="horizontal">
-          <MenuItem className="custom" disabled></MenuItem>
+        <Menu className="custom" mode="horizontal" onSelect={ index => console.log(index) }>
+          <MenuItem className="custom" index={0}>item1</MenuItem>
+          <MenuItem className="custom" index={1}>item2</MenuItem>
+          <MenuItem className="custom" index={2} disabled>item3</MenuItem>
         </Menu>
       </div>
     </div>

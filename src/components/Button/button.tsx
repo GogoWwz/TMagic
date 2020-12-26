@@ -82,7 +82,7 @@ const Button: React.FC<ButtonTypes> = props => {
         disabled={disabled}
         {...restProps}
       >
-        { children}
+        { children }
       </button>
     )
   }

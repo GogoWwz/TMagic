@@ -4,7 +4,7 @@ $black: #161824 !default;
 $gray: #e4dfd7 !default;
 
 // 功能色
-$blue: #126bae !default;
+$blue: #4b5cc4 !default;
 $red: #ed3321 !default;
 $yellow: #fbda41 !default;
 $green: #41b349 !default;
@@ -38,8 +38,14 @@ $border-width: 1px !default;
 $border-color: $gray !default;
 $border-radius: 2px !default;
 
-// 按钮变量
+// button按钮变量
 $btn-padding: 6px 10px !default;
 $btn-hover-opacity: .7;
 $btn-active-opacity: .9;
 $btn-transition: all .3s ease-in-out;
+
+// menu菜单变量
+$menu-bg: $gray;
+$menu-active-border-color: $blue !default;
+$menu-item-height: 48px !default;
+$menu-item-margin: 0 20px;

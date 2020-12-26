@@ -1,0 +1,33 @@
+.tm-menu {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: $border-width solid $gray;
+  .tm-menu__horizontal {
+
+  }
+  .tm-menu__verticle {
+
+  }
+  .tm-menuitem {
+    height: $menu-item-height;
+    line-height: $menu-item-height;
+    margin: $menu-item-margin;
+    cursor: pointer;
+  }
+  .tm-menuitem__disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
+  .tm-menuitem__active {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: $blue;
+    }
+  }
+}
