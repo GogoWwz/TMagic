@@ -12,6 +12,7 @@
   }
   .tm-menuitem__disabled {
     cursor: not-allowed;
+    user-select: none;
     opacity: .4;
   }
   &.tm-menu__horizontal {

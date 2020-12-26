@@ -62,7 +62,7 @@
       "value": {
         "name": "Alert",
         "route": "/Feedback/Alert",
-        "menu": "Feedback Components",
+        "menu": "Feedback",
         "id": "9b60fa173b3cacd70069f890fb9ebe20",
         "filepath": "src/components/Alert/alert.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Alert\\alert.mdx",
@@ -77,7 +77,7 @@
       "value": {
         "name": "Button",
         "route": "/Base/Button",
-        "menu": "Base Components",
+        "menu": "Base",
         "id": "c3a4162ba271ddbeabea462f799cd4e0",
         "filepath": "src/components/Button/button.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Button\\button.mdx",
@@ -92,7 +92,7 @@
       "value": {
         "name": "Icon",
         "route": "/Base/Icon",
-        "menu": "Base Components",
+        "menu": "Base",
         "id": "364dc3ee98c5d08e8c76b8a2fc2f35ad",
         "filepath": "src/components/Icon/icon.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Icon\\icon.mdx",
@@ -2536,17 +2536,6 @@
               }
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "src/components/Color/Color.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Color",
-          "methods": [],
-          "props": {}
         }
       ]
     },

@@ -6,7 +6,6 @@ import './styles/index.scss';
 import Button, { ButtonSize, ButtonType } from './components/Button/button'
 import Icon from './components/Icon/icon'
 import { ReactComponent as Close } from './assets/icons/close.svg'
-import Color from './components/Color/Color'
 import svg from './close.svg'
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
@@ -23,14 +22,15 @@ function App() {
         <Button type={ ButtonType.Danger }>Danger</Button>
         <Button type={ ButtonType.Link }>Link</Button>
       </div>
-      <div>
-        <Icon size="42" icon="arrow-down" />
-          {/* @ts-ignore */}
+      
+      <Icon size="42" icon="arrow-down" />
+      {/* <div>
+          // @ts-ignore
           <svg viewBox={svg.viewBox} width="48" height="48" fill="#ff0000">
-            {/* @ts-ignore */}
+            // @ts-ignore
             <use xlinkHref={"#" + svg.id} />
           </svg>
-      </div>
+      </div> */}
       <div>
         <Menu onSelect={ index => console.log(index) }>
           <MenuItem className="custom" index={0}>item1</MenuItem>
@@ -47,11 +47,6 @@ function App() {
       </div>
     </div>
   );
-}
-
-Menu.defaultProps = {
-  defaultSeletedKey: 0,
-  mode: "horizontal"
 }
 
 export default App;
