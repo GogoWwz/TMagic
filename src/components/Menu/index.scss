@@ -1,33 +1,57 @@
 .tm-menu {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: $border-width solid $gray;
-  .tm-menu__horizontal {
-
-  }
-  .tm-menu__verticle {
-
-  }
   .tm-menuitem {
     height: $menu-item-height;
     line-height: $menu-item-height;
-    margin: $menu-item-margin;
+    transition: $menu-item-transition;
     cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
   }
   .tm-menuitem__disabled {
     cursor: not-allowed;
     opacity: .4;
   }
-  .tm-menuitem__active {
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: $blue;
+  &.tm-menu__horizontal {
+    border-bottom: $border-width solid $gray;
+    .tm-menuitem {
+      margin: 0 20px;
+    }
+    .tm-menuitem__active {
+      position: relative;
+      color: $blue;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 2.5px;
+        background: $blue;
+      }
+    }
+  }
+  &.tm-menu__vertical {
+    flex-direction: column;
+    border-right: $border-width solid $gray;
+    .tm-menuitem {
+      margin: 5px 0;
+      padding: 0 16px;
+    }
+    .tm-menuitem__active {
+      position: relative;
+      color: $blue;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -1px;
+        width: 2.5px;
+        height: 100%;
+        background: $blue;
+      }
     }
   }
 }

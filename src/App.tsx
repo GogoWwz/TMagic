@@ -36,6 +36,13 @@ function App() {
           <MenuItem className="custom" index={1}>item2</MenuItem>
           <MenuItem className="custom" index={2} disabled>item3</MenuItem>
         </Menu>
+        <div style={{ width: 300 }}>
+          <Menu className="custom" mode="vertical" onSelect={ index => console.log(index) }>
+            <MenuItem className="custom" index={0}>item1</MenuItem>
+            <MenuItem className="custom" index={1}>item2</MenuItem>
+            <MenuItem className="custom" index={2} disabled>item3</MenuItem>
+          </Menu>
+        </div>
       </div>
     </div>
   );
