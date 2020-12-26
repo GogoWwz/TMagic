@@ -1,0 +1,27 @@
+---
+name: Menu
+route: /Navigation/Menu
+menu: Navigation
+---
+
+import { Playground } from 'docz'
+import Menu from './menu.tsx'
+import MenuItem from './menuItem.tsx'
+
+<Playground>
+  <h2>Menu</h2>
+
+  <Menu onSelect={ index => console.log(index) }>
+    <MenuItem index={0}>item1</MenuItem>
+    <MenuItem index={1}>item2</MenuItem>
+    <MenuItem index={2} disabled>item3</MenuItem>
+  </Menu>
+
+  <div style={{ width: 300, marginTop: 40 }}>
+    <Menu mode="vertical" onSelect={ index => console.log(index) }>
+      <MenuItem index={0}>item1</MenuItem>
+      <MenuItem index={1}>item2</MenuItem>
+      <MenuItem index={2} disabled>item3</MenuItem>
+    </Menu>
+  </div>
+</Playground>

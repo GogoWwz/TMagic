@@ -1,3 +1,4 @@
 export default {
-  title: 'TMagic'
+  title: 'TMagic',
+  typescript: true
 };

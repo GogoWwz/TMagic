@@ -7,16 +7,6 @@
           "options": {}
         },
         {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "babel-plugin-export-metadata",
-          "options": {
-            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
-          }
-        },
-        {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -27,9 +17,28 @@
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
+        },
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
+          }
         }
       ],
       "presets": [
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "React"
+          }
+        },
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
@@ -38,15 +47,6 @@
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
-          }
-        },
-        {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-          "options": {
-            "plugins": [],
-            "allExtensions": false,
-            "isTSX": false,
-            "jsxPragma": "React"
           }
         }
       ],
@@ -62,16 +62,6 @@
           "options": {}
         },
         {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "babel-plugin-export-metadata",
-          "options": {
-            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
-          }
-        },
-        {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -82,9 +72,28 @@
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
+        },
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
+          }
         }
       ],
       "presets": [
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "React"
+          }
+        },
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
@@ -93,15 +102,6 @@
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
-          }
-        },
-        {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-          "options": {
-            "plugins": [],
-            "allExtensions": false,
-            "isTSX": false,
-            "jsxPragma": "React"
           }
         }
       ],
@@ -117,16 +117,6 @@
           "options": {}
         },
         {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "babel-plugin-export-metadata",
-          "options": {
-            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
-          }
-        },
-        {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -137,9 +127,28 @@
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
+        },
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
+          }
         }
       ],
       "presets": [
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "React"
+          }
+        },
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
@@ -148,15 +157,6 @@
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
-          }
-        },
-        {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-          "options": {
-            "plugins": [],
-            "allExtensions": false,
-            "isTSX": false,
-            "jsxPragma": "React"
           }
         }
       ],
@@ -172,16 +172,6 @@
           "options": {}
         },
         {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "babel-plugin-export-metadata",
-          "options": {
-            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
-          }
-        },
-        {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -192,9 +182,28 @@
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
+        },
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\plugin-proposal-object-rest-spread\\lib\\index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "C:\\Users\\wwz\\Desktop\\FE\\tmagic"
+          }
         }
       ],
       "presets": [
+        {
+          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true,
+            "jsxPragma": "React"
+          }
+        },
         {
           "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@emotion\\babel-preset-css-prop\\dist\\babel-preset-css-prop.cjs.js",
           "options": {
@@ -203,15 +212,6 @@
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
-          }
-        },
-        {
-          "name": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-          "options": {
-            "plugins": [],
-            "allExtensions": false,
-            "isTSX": false,
-            "jsxPragma": "React"
           }
         }
       ],

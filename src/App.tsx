@@ -8,7 +8,8 @@ import Icon from './components/Icon/icon'
 import { ReactComponent as Close } from './assets/icons/close.svg'
 import Color from './components/Color/Color'
 import svg from './close.svg'
-import Menu, { MenuItem } from './components/Menu/menu'
+import Menu from './components/Menu/menu'
+import MenuItem from './components/Menu/menuItem'
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           </svg>
       </div>
       <div>
-        <Menu className="custom" mode="horizontal" onSelect={ index => console.log(index) }>
+        <Menu onSelect={ index => console.log(index) }>
           <MenuItem className="custom" index={0}>item1</MenuItem>
           <MenuItem className="custom" index={1}>item2</MenuItem>
           <MenuItem className="custom" index={2} disabled>item3</MenuItem>

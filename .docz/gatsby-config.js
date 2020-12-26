@@ -24,6 +24,13 @@ const config = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
+    {
       resolve: 'gatsby-theme-docz',
       options: {
         themeConfig: {},
@@ -36,7 +43,7 @@ const config = {
         mdPlugins: [],
         hastPlugins: [],
         ignore: [],
-        typescript: false,
+        typescript: true,
         ts: false,
         propsParser: true,
         'props-parser': true,
@@ -61,7 +68,7 @@ const config = {
         title: 'TMagic',
         description: 'My awesome app using docz',
         host: 'localhost',
-        port: 3001,
+        port: 3000,
         p: 3000,
         separator: '-',
         paths: {

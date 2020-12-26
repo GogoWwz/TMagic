@@ -1,6 +1,5 @@
 import React, { useState, createContext } from 'react'
 import classNames from 'classnames'
-import MenuItem from './menuItem'
 
 type MenuMode = "horizontal" | "vertical"
 type MenuKey = number
@@ -19,8 +18,7 @@ export interface MenuProps {
   onSelect?: MenuSelectedCallback
 }
 
-export const MenuContext = createContext<IMenuContext>({ currentIndex: 0 })
-
+const MenuContext = createContext<IMenuContext>({ currentIndex: 0 })
 
 const Menu: React.FC<MenuProps> = props => {
   const { defaultSeletedKey, className, mode, children, onSelect } = props
@@ -51,7 +49,11 @@ const Menu: React.FC<MenuProps> = props => {
   )
 }
 
+Menu.defaultProps = {
+  mode: "horizontal"
+}
+
 export {
-  MenuItem
+  MenuContext
 }
 export default Menu
