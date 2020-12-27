@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // 输出目录
+    "outDir": "dist",
+    // 模块规范
+    "module": "esnext",
+    // 编译后js版本
+    "target": "es5",
+    // 生成.d.ts声明文件
+    "declaration": true,
+    // 以node环境方式处理模块
+    "moduleResolution": "node",
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/**/*.mdx",
+    "src/**/*.test.tsx"
+  ]
+}

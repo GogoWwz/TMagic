@@ -1,10 +1,10 @@
 {
   "config": {
     "title": "TMagic",
-    "description": "My awesome app using docz",
+    "description": "A simple and light-weight react UI library",
     "menu": [],
-    "version": "0.1.0",
-    "repository": null,
+    "version": "0.1.2",
+    "repository": "https://github.com/GogoWwz/TMagic",
     "native": false,
     "themeConfig": {},
     "separator": "-",
@@ -17,7 +17,7 @@
         "id": "04c6e90faac2675aa89e2176d2eec7d8",
         "filepath": "README.md",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\README.md",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\README.md",
         "hidden": false,
         "slug": "readme",
         "route": "/readme",
@@ -30,14 +30,14 @@
             "value": "TMagic"
           },
           {
-            "slug": "启动",
+            "slug": "安装",
             "depth": 3,
-            "value": "启动"
+            "value": "安装"
           },
           {
-            "slug": "文档",
+            "slug": "引入css",
             "depth": 3,
-            "value": "文档"
+            "value": "引入css"
           }
         ]
       }
@@ -50,7 +50,7 @@
         "id": "11438d377c216000043a0e9a203ed5c0",
         "filepath": "src/start.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\start.mdx",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\src/start.mdx",
         "hidden": false,
         "slug": "src-start",
         "menu": "",
@@ -66,7 +66,7 @@
         "id": "9b60fa173b3cacd70069f890fb9ebe20",
         "filepath": "src/components/Alert/alert.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Alert\\alert.mdx",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\src/components/Alert/alert.mdx",
         "hidden": false,
         "slug": "src-components-alert-alert",
         "headings": []
@@ -81,7 +81,7 @@
         "id": "c3a4162ba271ddbeabea462f799cd4e0",
         "filepath": "src/components/Button/button.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Button\\button.mdx",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\src/components/Button/button.mdx",
         "hidden": false,
         "slug": "src-components-button-button",
         "headings": []
@@ -96,7 +96,7 @@
         "id": "364dc3ee98c5d08e8c76b8a2fc2f35ad",
         "filepath": "src/components/Icon/icon.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Icon\\icon.mdx",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\src/components/Icon/icon.mdx",
         "hidden": false,
         "slug": "src-components-icon-icon",
         "headings": []
@@ -111,7 +111,7 @@
         "id": "5f455407f1d83eb9cd0236b9eb0315a1",
         "filepath": "src/components/Menu/menu.mdx",
         "fullpath": "C:\\Users\\wwz\\Desktop\\FE\\tmagic\\src\\components\\Menu\\menu.mdx",
-        "link": "",
+        "link": "https://github.com/GogoWwz/TMagic\\edit\\master\\src/components/Menu/menu.mdx",
         "hidden": false,
         "slug": "src-components-menu-menu",
         "headings": []
@@ -119,14 +119,6 @@
     }
   ],
   "props": [
-    {
-      "key": "src/App.tsx",
-      "value": []
-    },
-    {
-      "key": "src/Hello.tsx",
-      "value": []
-    },
     {
       "key": "src/index.tsx",
       "value": []
@@ -2538,6 +2530,10 @@
           }
         }
       ]
+    },
+    {
+      "key": "src/components/Button/index.tsx",
+      "value": []
     },
     {
       "key": "src/components/Icon/icon.tsx",
@@ -6888,6 +6884,14 @@
           }
         }
       ]
+    },
+    {
+      "key": "src/components/Icon/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/components/Menu/index.tsx",
+      "value": []
     },
     {
       "key": "src/components/Menu/menu.tsx",

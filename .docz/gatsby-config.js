@@ -20,7 +20,7 @@ const config = {
 
   siteMetadata: {
     title: 'TMagic',
-    description: 'My awesome app using docz',
+    description: 'A simple and light-weight react UI library',
   },
   plugins: [
     {
@@ -66,9 +66,9 @@ const config = {
         'edit-branch': 'master',
         config: '',
         title: 'TMagic',
-        description: 'My awesome app using docz',
+        description: 'A simple and light-weight react UI library',
         host: 'localhost',
-        port: 3000,
+        port: 3001,
         p: 3000,
         separator: '-',
         paths: {

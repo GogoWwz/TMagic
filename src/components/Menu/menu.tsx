@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react'
+import MenuItem from './menuItem'
 import classNames from 'classnames'
 
 type MenuMode = "horizontal" | "vertical"

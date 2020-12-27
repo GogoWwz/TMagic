@@ -1,8 +1,9 @@
 # TMagic
-A Magical React UI library
+A simple and light-weight react UI library
 
-### 启动
-`npm start`
+### 安装
+`npm install tmagic`
 
-### 文档
-`npm run doc`
+
+### 引入css
+`import "tmagic/dist/index.css"`

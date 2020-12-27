@@ -50041,7 +50041,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Alert = function Alert(props) {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", null, "Alert");
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", null, "Alert\u7EC4\u4EF6");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Alert);
