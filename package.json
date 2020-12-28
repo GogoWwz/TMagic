@@ -52,7 +52,7 @@
     "doc": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "prepublish": "npm run lint && npm run test:pub && npm run build"
+    "prepublishOnly": "npm run lint && npm run test:pub && npm run build"
   },
   "eslintConfig": {
     "extends": [
