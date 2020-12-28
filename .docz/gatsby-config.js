@@ -68,7 +68,7 @@ const config = {
         title: 'TMagic',
         description: 'A simple and light-weight react UI library',
         host: 'localhost',
-        port: 3001,
+        port: 3000,
         p: 3000,
         separator: '-',
         paths: {

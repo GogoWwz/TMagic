@@ -3,7 +3,7 @@
     "title": "TMagic",
     "description": "A simple and light-weight react UI library",
     "menu": [],
-    "version": "0.1.2",
+    "version": "0.1.3",
     "repository": "https://github.com/GogoWwz/TMagic",
     "native": false,
     "themeConfig": {},
