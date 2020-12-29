@@ -13,8 +13,8 @@ cache:
 env:
   - CI=true
 
-script:
-  - npm run doc:build
+# script:
+#   - npm run doc:build
 
 # # 部署文档 github pages
 # deploy:
