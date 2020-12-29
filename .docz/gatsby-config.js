@@ -16,7 +16,7 @@ if (hasGatsbyConfig) {
 }
 
 const config = {
-  pathPrefix: '/',
+  pathPrefix: '/TMagic',
 
   siteMetadata: {
     title: 'TMagic',
@@ -54,12 +54,12 @@ const config = {
         open: null,
         'open-browser': null,
         root: 'C:\\Users\\wwz\\Desktop\\FE\\tmagic\\.docz',
-        base: '/',
+        base: '/TMagic',
         source: './',
         'gatsby-root': null,
         files: '**/*.{md,markdown,mdx}',
         public: '/public',
-        dest: '.docz/dist',
+        dest: '/doc',
         d: '.docz/dist',
         editBranch: 'master',
         eb: 'master',

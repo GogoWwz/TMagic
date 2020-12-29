@@ -25,3 +25,5 @@ yarn-error.log
 # IDE
 /.vscode
 .eslintcache
+/.docz
+/doc

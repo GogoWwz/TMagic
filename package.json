@@ -12,7 +12,7 @@
     "UI",
     "Component"
   ],
-  "homepage": "https://github.com/GogoWwz/TMagic",
+  "homepage": "https://gogowwz.github.io/TMagic/Base/Button",
   "repository": {
     "type": "git",
     "url": "https://github.com/GogoWwz/TMagic"
@@ -50,7 +50,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "doc": "docz dev",
-    "doc:build": "rimraf ./.docz && docz build",
+    "doc:build": "rimraf ./doc && docz build",
     "doc:serve": "rimraf ./.docz && docz build && docz serve",
     "prepublishOnly": "npm run lint && npm run test:pub && npm run build"
   },

@@ -8,6 +8,8 @@
     "native": false,
     "themeConfig": {},
     "separator": "-",
+    "dest": "/doc",
+    "base": "/TMagic",
     "typescript": true
   },
   "entries": [
