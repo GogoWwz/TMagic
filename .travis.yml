@@ -13,14 +13,14 @@ cache:
 env:
   - CI=true
 
-# script:
-#   - npm run doc:build
+script:
+  - npm run doc:build
 
-# # 部署文档 github pages
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-#   local_dir: .docz
-#   on:
-#     branch: test
+# 部署文档 github pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  local_dir: ./doc/
+  on:
+    branch: main
