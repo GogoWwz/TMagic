@@ -1,0 +1,14 @@
+---
+name: Message
+route: /Feedback/Message
+menu: Feedback
+---
+
+import Button from '../Button'
+import Message from './message'
+
+<div>
+  <Button onClick={() => {
+    Message.info()
+  }}>Show Message</Button>
+</div>
