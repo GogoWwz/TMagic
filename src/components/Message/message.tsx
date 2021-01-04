@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { createPortal, render, unmountComponentAtNode } from 'react-dom'
 import classnames from 'classnames'
 import Icon from '../Icon'
@@ -20,14 +20,27 @@ const MessageComponent: React.FC<MessageProps> = props => {
     [`tm-message__${ visible ? 'in' : "out" }`]: true
   })
 
-  setTimeout(() => {
-    setVisible(false)
-  }, 2000)
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible(false)
+    }, 2000)
+  }, [])
 
   return (
     createPortal((
       <div className={classes}>
-        <Icon icon="exclamation-circle" className="t-message__icon"></Icon>
+        {
+          type === 'primary' && <Icon icon="exclamation-circle" className="t-message__icon"></Icon>
+        }
+        {
+          type === 'success' && <Icon icon="check-circle" className="t-message__icon"></Icon>
+        }
+        {
+          type === 'warning' && <Icon icon="exclamation-triangle" className="t-message__icon"></Icon>
+        }
+        {
+          type === 'danger' && <Icon icon="times-circle" className="t-message__icon"></Icon>
+        }
         <span>
           这是消息弹框组件
         </span>
@@ -36,16 +49,29 @@ const MessageComponent: React.FC<MessageProps> = props => {
   )
 }
 
+const createMessage:(type: MessageTypes) => void = type => {
+  let div = document.createElement("div")
+  render(<MessageComponent type={type}></MessageComponent>, div)
+
+  setTimeout(() => {
+    unmountComponentAtNode(div)
+  }, 2400)
+}
+
 const Message = {
   info: () => {
-    let div = document.createElement("div")
-    render(<MessageComponent type="primary"></MessageComponent>, div)
-
-    setTimeout(() => {
-      unmountComponentAtNode(div)
-    }, 2400)
+    createMessage("primary")
+  },
+  success: () => {
+    createMessage("success")
+  },
+  warning:() => {
+    createMessage("warning")
+  },
+  danger: () => {
+    createMessage("danger")
   }
 }
 
 
-export default Message
+// export default Message

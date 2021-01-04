@@ -4,11 +4,13 @@ route: /Feedback/Message
 menu: Feedback
 ---
 
+import { Playground } from 'docz'
 import Button from '../Button'
 import Message from './message'
 
-<div>
-  <Button onClick={() => {
-    Message.info()
-  }}>Show Message</Button>
-</div>
+<Playground>
+  <Button type="primary" onClick={() => Message.info()}>Show Info</Button>
+  <Button type="success" onClick={() => Message.success()}>Show Success</Button>
+  <Button type="warning" onClick={() => Message.warning()}>Show Warning</Button>
+  <Button type="danger" onClick={() => Message.danger()}>Show Danger</Button>
+</Playground>

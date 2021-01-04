@@ -43,6 +43,15 @@
   &.tm-message__primary {
     background: $blue;
   }
+  &.tm-message__success {
+    background: $green;
+  }
+  &.tm-message__warning {
+    background: $yellow;
+  }
+  &.tm-message__danger {
+    background: $red;
+  }
   .t-message__icon {
     margin-right: 16px;
   }
