@@ -148,5 +148,11 @@ button {
     transform: translate(-50%, 0); } }
   .tm-message.tm-message__primary {
     background: #4b5cc4; }
+  .tm-message.tm-message__success {
+    background: #41b349; }
+  .tm-message.tm-message__warning {
+    background: #fbda41; }
+  .tm-message.tm-message__danger {
+    background: #ed3321; }
   .tm-message .t-message__icon {
     margin-right: 16px; }
