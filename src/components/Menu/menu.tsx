@@ -1,6 +1,8 @@
 import React, { useState, createContext } from 'react'
 import classNames from 'classnames'
 
+// import { MenuItemProps } from './menuItem'
+
 type MenuMode = "horizontal" | "vertical"
 type MenuKey = number
 type MenuSelectedCallback = (selectIndex: number) => void
@@ -40,9 +42,21 @@ const Menu: React.FC<MenuProps> = props => {
     onSelect: handleClick
   }
 
+  // const MenuItems = React.Children.map(children, (child, index) => {
+  //   // 因为child是ReactNode类型，而displayName是存在函数式组件实例上的属性，所以需要进行类型断言
+  //   const ChildElement = child as React.FunctionComponentElement<MenuItemProps>
+  //   const { displayName } = ChildElement.type
+  //   if(displayName === 'MenuItem') {
+  //     return cloneElement(ChildElement, { index })
+  //   } else {
+  //     console.error("Warning: Menu has a child whitch is not a MenuItem component！")
+  //   }
+  // })
+
   return (
     <ul className={classes}>
       <MenuContext.Provider value={passedContext}>
+        {/* { MenuItems } */}
         { children }
       </MenuContext.Provider>
     </ul>
