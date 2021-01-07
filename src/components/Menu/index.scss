@@ -22,10 +22,19 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      transform: translateY(100%);
+      transform: translate(0, 100%);
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
       background: $white;
-      display: none;
+    }
+    &:not(:hover) {
+      .tm-sublist {
+        display: none;
+      }
+    }
+    &:hover {
+      .tm-sublist {
+        display: block;
+      }
     }
   }
   &.tm-menu__horizontal {
