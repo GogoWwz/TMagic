@@ -6,23 +6,29 @@ edit: false
 ---
 
 import { Playground } from 'docz'
-import Menu from './menu.tsx'
-import MenuItem from './menuItem.tsx'
+import Menu from './index'
+// import MenuItem from './menuItem.tsx'
 
 <Playground>
   <h2>Menu</h2>
 
   <Menu onSelect={ index => console.log(index) }>
-    <MenuItem index={0}>item1</MenuItem>
-    <MenuItem index={1}>item2</MenuItem>
-    <MenuItem disabled index={2}>item3</MenuItem>
+    <Menu.Item>menu1</Menu.Item>
+    <Menu.Item>menu2</Menu.Item>
+    <Menu.Item disabled>menu3</Menu.Item>
+    <Menu.Item>menu4</Menu.Item>
+    <Menu.SubMenu>
+      <Menu.Item>SubMenu1</Menu.Item>
+      <Menu.Item>SubMenu2</Menu.Item>
+      <Menu.Item>SubMenu3</Menu.Item>
+    </Menu.SubMenu>
   </Menu>
 
   <div style={{ width: 300, marginTop: 40 }}>
     <Menu mode="vertical" onSelect={ index => console.log(index) }>
-      <MenuItem index={0}>item1</MenuItem>
-      <MenuItem index={1}>item2</MenuItem>
-      <MenuItem disabled index={2}>item3</MenuItem>
+      <Menu.Item>item1</Menu.Item>
+      <Menu.Item>item2</Menu.Item>
+      <Menu.Item disabled>item3</Menu.Item>
     </Menu>
   </div>
 </Playground>

@@ -1,12 +1,11 @@
-import React, { useState, createContext } from 'react'
+import React, { useState, createContext, cloneElement } from 'react'
 import classNames from 'classnames'
 
-// import { MenuItemProps } from './menuItem'
+import { MenuItemProps } from './menuItem'
 
 type MenuMode = "horizontal" | "vertical"
 type MenuKey = number
 type MenuSelectedCallback = (selectIndex: number) => void
-
 
 interface IMenuContext {
   currentIndex?: MenuKey,
@@ -20,7 +19,9 @@ export interface MenuProps {
   onSelect?: MenuSelectedCallback
 }
 
-const MenuContext = createContext<IMenuContext>({ currentIndex: 0 })
+const MenuContext = createContext<IMenuContext>({
+  currentIndex: 0
+})
 
 const Menu: React.FC<MenuProps> = props => {
   const { defaultSeletedKey, className, mode, children, onSelect } = props
@@ -36,28 +37,27 @@ const Menu: React.FC<MenuProps> = props => {
       onSelect(key)
     }
   }
-  
+
   const passedContext: IMenuContext = {
     currentIndex: currentIndex || 0,
     onSelect: handleClick
   }
 
-  // const MenuItems = React.Children.map(children, (child, index) => {
-  //   // 因为child是ReactNode类型，而displayName是存在函数式组件实例上的属性，所以需要进行类型断言
-  //   const ChildElement = child as React.FunctionComponentElement<MenuItemProps>
-  //   const { displayName } = ChildElement.type
-  //   if(displayName === 'MenuItem') {
-  //     return cloneElement(ChildElement, { index })
-  //   } else {
-  //     console.error("Warning: Menu has a child whitch is not a MenuItem component！")
-  //   }
-  // })
+  const MenuItems = React.Children.map(children, (child, index) => {
+    // 因为child是ReactNode类型，而displayName是存在函数式组件实例上的属性，所以需要进行类型断言
+    const ChildElement = child as React.FunctionComponentElement<MenuItemProps>
+    const { displayName } = ChildElement.type
+    if(displayName === 'MenuItem' || displayName === 'SubMenu') {
+      return cloneElement(ChildElement, { index })
+    } else {
+      console.error("Warning: Menu has a child whitch is not a MenuItem component！")
+    }
+  })
 
   return (
-    <ul className={classes}>
+    <ul className={classes} role="menu">
       <MenuContext.Provider value={passedContext}>
-        {/* { MenuItems } */}
-        { children }
+        { MenuItems }
       </MenuContext.Provider>
     </ul>
   )

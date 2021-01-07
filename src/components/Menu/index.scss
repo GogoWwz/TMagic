@@ -1,6 +1,7 @@
 .tm-menu {
   display: flex;
   flex-wrap: wrap;
+  font-size: $font-size;
   .tm-menuitem {
     height: $menu-item-height;
     line-height: $menu-item-height;
@@ -14,6 +15,18 @@
     cursor: not-allowed;
     user-select: none;
     opacity: .4;
+  }
+  .tm-submenu {
+    position: relative;
+    .tm-sublist {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+      background: $white;
+      display: none;
+    }
   }
   &.tm-menu__horizontal {
     border-bottom: $border-width solid $gray;

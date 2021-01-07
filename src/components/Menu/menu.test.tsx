@@ -3,6 +3,7 @@ import { render, RenderResult, fireEvent } from '@testing-library/react'
 
 import Menu, { MenuProps } from './menu'
 import MenuItem from './menuItem'
+import SubMenu from './subMenu'
 
 const TestHorProps: MenuProps = {
   mode: "horizontal",
@@ -19,9 +20,13 @@ const TestHorProps: MenuProps = {
 const TestMenu = (props: MenuProps) => {
   return (
     <Menu {...props}>
-      <MenuItem index={0}>item1</MenuItem>
-      <MenuItem index={1}>item2</MenuItem>
-      <MenuItem disabled index={2}>disabled</MenuItem>
+      <MenuItem>item1</MenuItem>
+      <MenuItem>item2</MenuItem>
+      <MenuItem disabled>disabled</MenuItem>
+      <SubMenu>
+        <MenuItem>submenu1</MenuItem>
+        <MenuItem>submenu2</MenuItem>
+      </SubMenu>
     </Menu>
   )
 }
@@ -34,7 +39,7 @@ let wrapper: RenderResult,
 describe("Menu Test", () => {
   beforeEach(() => {
     wrapper = render(TestMenu(TestHorProps))
-    menuElement = wrapper.getByRole("list")
+    menuElement = wrapper.getByRole("menu")
     activeElement = wrapper.getByText("item1")
     disableElement = wrapper.getByText('disabled')
   })
