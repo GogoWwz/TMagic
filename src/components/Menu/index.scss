@@ -2,13 +2,26 @@
   display: flex;
   flex-wrap: wrap;
   font-size: $font-size;
-  .tm-menuitem {
-    height: $menu-item-height;
-    line-height: $menu-item-height;
-    transition: $menu-item-transition;
+  .menu-item {
     cursor: pointer;
+    line-height: $menu-item-lineheight;
+    transition: $menu-item-transition;
+  }
+  .tm-menuitem {
+    @extend .menu-item;
     &:not(.tm-menuitem__disabled):hover {
       color: $blue;
+    }
+  }
+  .tm-submenu {
+    @extend .menu-item;
+    position: relative;
+    .tm-sublist {
+      background: $white;
+      display: none;
+      &.tm-sublist__open {
+        display: block;
+      }
     }
   }
   .tm-menuitem__disabled {
@@ -16,32 +29,8 @@
     user-select: none;
     opacity: .4;
   }
-  .tm-submenu {
-    position: relative;
-    .tm-sublist {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(0, 100%);
-      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-      background: $white;
-    }
-    &:not(:hover) {
-      .tm-sublist {
-        display: none;
-      }
-    }
-    &:hover {
-      .tm-sublist {
-        display: block;
-      }
-    }
-  }
   &.tm-menu__horizontal {
     border-bottom: $border-width solid $gray;
-    .tm-menuitem {
-      margin: 0 20px;
-    }
     @keyframes scaleWidth {
       0% {
         transform: scaleX(.4);
@@ -49,6 +38,9 @@
       100% {
         transform: scaleX(1);
       }
+    }
+    .tm-menuitem {
+      padding: 0 20px;
     }
     .tm-menuitem__active {
       position: relative;
@@ -64,13 +56,34 @@
         animation: scaleWidth .2s ease;
       }
     }
+    .tm-submenu {
+      padding: 0 20px;
+      .tm-menuitem {
+        line-height: 32px;
+      }
+      .tm-sublist {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        transform: translate(0, 100%);
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+        border-radius: 2px;
+      }
+      .tm-menuitem__active {
+        color: $white;
+        background: $blue;
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
   &.tm-menu__vertical {
     flex-direction: column;
     border-right: $border-width solid $gray;
     .tm-menuitem {
       margin: 5px 0;
-      padding: 0 16px;
+      padding-left: 16px;
     }
     @keyframes scaleHeight {
       0% {
@@ -93,6 +106,10 @@
         background: $blue;
         animation: scaleHeight .2s ease;
       }
+    }
+    .tm-submenu {
+      margin: 5px 0;
+      padding-left: 16px;
     }
   }
 }

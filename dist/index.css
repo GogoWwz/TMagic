@@ -51,7 +51,8 @@ button {
 
 .tm-menu {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-size: 14px; }
   .tm-menu .tm-menuitem {
     height: 48px;
     line-height: 48px;
@@ -63,6 +64,20 @@ button {
     cursor: not-allowed;
     user-select: none;
     opacity: .4; }
+  .tm-menu .tm-submenu {
+    position: relative; }
+    .tm-menu .tm-submenu .tm-sublist {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0, 100%);
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 2px; }
+    .tm-menu .tm-submenu:not(:hover) .tm-sublist {
+      display: none; }
+    .tm-menu .tm-submenu:hover .tm-sublist {
+      display: block; }
   .tm-menu.tm-menu__horizontal {
     border-bottom: 1px solid #e4dfd7; }
     .tm-menu.tm-menu__horizontal .tm-menuitem {

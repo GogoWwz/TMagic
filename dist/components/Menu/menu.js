@@ -1,6 +1,8 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, createContext, cloneElement } from 'react';
 import classNames from 'classnames';
-var MenuContext = createContext({ currentIndex: 0 });
+var MenuContext = createContext({
+    currentIndex: 0
+});
 var Menu = function (props) {
     var _a;
     var defaultSeletedKey = props.defaultSeletedKey, className = props.className, mode = props.mode, children = props.children, onSelect = props.onSelect;
@@ -18,8 +20,19 @@ var Menu = function (props) {
         currentIndex: currentIndex || 0,
         onSelect: handleClick
     };
-    return (React.createElement("ul", { className: classes },
-        React.createElement(MenuContext.Provider, { value: passedContext }, children)));
+    var MenuItems = React.Children.map(children, function (child, index) {
+        // 因为child是ReactNode类型，而displayName是存在函数式组件实例上的属性，所以需要进行类型断言
+        var ChildElement = child;
+        var displayName = ChildElement.type.displayName;
+        if (displayName === 'MenuItem' || displayName === 'SubMenu') {
+            return cloneElement(ChildElement, { index: index });
+        }
+        else {
+            console.error("Warning: Menu has a child whitch is not a MenuItem component！");
+        }
+    });
+    return (React.createElement("ul", { className: classes, role: "menu" },
+        React.createElement(MenuContext.Provider, { value: passedContext }, MenuItems)));
 };
 Menu.defaultProps = {
     mode: "horizontal"

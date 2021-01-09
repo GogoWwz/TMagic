@@ -15,4 +15,5 @@ var MenuItem = function (props) {
     };
     return (React.createElement("li", { className: classes, onClick: handleClick }, children));
 };
+MenuItem.displayName = "MenuItem";
 export default MenuItem;
