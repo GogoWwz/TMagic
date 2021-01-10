@@ -1,0 +1,20 @@
+---
+name: Input
+route: /Form/Input
+menu: Form
+edit: false
+---
+
+import { useState } from 'react'
+import { Playground } from 'docz'
+import Input from './input'
+
+
+<Playground>
+  <div>
+    <Input
+      defaultValue="defaultValue"
+      onChange={e => console.log(e.target.value)}
+    />
+  </div>
+</Playground>

@@ -6,6 +6,7 @@ import MenuItem from './menuItem'
 import SubMenu from './subMenu'
 
 const TestHorProps: MenuProps = {
+  defaultSeletedKey: "item2",
   mode: "horizontal",
   onSelect: jest.fn(),
   className: "test"
@@ -20,12 +21,12 @@ const TestHorProps: MenuProps = {
 const TestMenu = (props: MenuProps) => {
   return (
     <Menu {...props}>
-      <MenuItem>item1</MenuItem>
-      <MenuItem>item2</MenuItem>
-      <MenuItem disabled>disabled</MenuItem>
+      <MenuItem tag="item1">item1</MenuItem>
+      <MenuItem tag="item2">item2</MenuItem>
+      <MenuItem tag="item3" disabled>disabled</MenuItem>
       <SubMenu>
-        <MenuItem>submenu1</MenuItem>
-        <MenuItem>submenu2</MenuItem>
+        <MenuItem tag="submenu1">submenu1</MenuItem>
+        <MenuItem tag="submenu2">submenu2</MenuItem>
       </SubMenu>
     </Menu>
   )
@@ -40,7 +41,7 @@ describe("Menu Test", () => {
   beforeEach(() => {
     wrapper = render(TestMenu(TestHorProps))
     menuElement = wrapper.getByRole("menu")
-    activeElement = wrapper.getByText("item1")
+    activeElement = wrapper.getByText("item2")
     disableElement = wrapper.getByText('disabled')
   })
   it("是否正常挂载menu组件", () => {

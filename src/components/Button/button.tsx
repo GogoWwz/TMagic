@@ -1,34 +1,10 @@
 import React from 'react'
 import classnames from 'classnames'
 
-// 按钮类型
-export enum ButtonType {
-  Default = "default",
-  Primary = 'primary',
-  Success = "success",
-  Warning = 'warning',
-  Danger = "danger",
-  Info = "info",
-  Link = 'link'
-}
-
-// 按钮HTML类型
-export enum ButtonHTMLType {
-  Submit = 'submit',
-  Reset = 'reset',
-  Button = 'button'
-}
-
-// 按钮尺寸
-export enum ButtonSize {
-  Large = 'large',
-  Normal = 'normal',
-  Small = 'small'
-}
-
 // 按钮大小和类型字符串字面量
 type ButtonTypeLimit = "default" | "primary" | "success" | "warning" | "danger" | "link"
 type ButtonSizeLimit = "large" | "normal" | "small"
+type ButtonHtmlTypeLimit = "button" | "submit" | "reset"
 
 // Button基础属性
 export interface BaseButtonProps {
@@ -43,7 +19,7 @@ export interface BaseButtonProps {
 // button属性
 // 利用Omit帮助类型去除原生button中的 type 属性，用自定义的htmlType属性代替
 export type NativeButtonProps = {
-  htmlType?: ButtonHTMLType
+  htmlType?: ButtonHtmlTypeLimit
 } & BaseButtonProps & Omit<React.AnchorHTMLAttributes<HTMLElement>, 'type'>
 
 // a链接属性
@@ -66,10 +42,10 @@ const Button: React.FC<ButtonTypes> = props => {
   const classes = classnames('tm-btn', className, {
     [`tm-btn__${type}`]: type,
     [`tm-btn__${size}`]: size,
-    'disabled': type === ButtonType.Link && disabled
+    'disabled': type === 'link' && disabled
   })
 
-  if (type === ButtonType.Link) {
+  if (type === "link") {
     return (
       <a href={href} className={classes} {...restProps}>
         { children}
@@ -89,7 +65,7 @@ const Button: React.FC<ButtonTypes> = props => {
 }
 
 Button.defaultProps = {
-  type: ButtonType.Default
+  type: "default"
 }
 
 export default Button

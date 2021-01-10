@@ -1,0 +1,21 @@
+.tm-input {
+  position: relative;
+  display: inline-block;
+  .tm-input__inner {
+    font-size: 14px;
+    background-color: $white;
+    padding: 4px 7px;
+    border-radius: 4px;
+    height: 32px;
+    border: 1px solid #dcdee2;
+    transition: border .25s ease-in-out;
+    box-sizing: border-box;
+    &:hover {
+      border-color: $blue;
+    }
+    &:focus {
+      border-color: rgba(75, 92, 196, .6);
+      box-shadow: 0 0 0 1px rgba(75, 92, 196, .2);
+    }
+  }
+}

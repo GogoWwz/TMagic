@@ -1,12 +1,12 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 
-import Button, { ButtonSize, ButtonType } from './button'
+import Button from './button'
 
 const testProps = {
   onClick: jest.fn(),
-  type: ButtonType.Primary,
-  size: ButtonSize.Normal,
+  type: "primary",
+  size: "normal",
   className: "custom"
 }
 
@@ -30,7 +30,7 @@ describe("Button Test", () => {
   })
 
   it("是否正常加载一个Link按钮", () => {
-    const wrapper = render(<Button type={ButtonType.Link}>Link</Button>)
+    const wrapper = render(<Button type="link">Link</Button>)
     const element = wrapper.getByText("Link")
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual("A")
