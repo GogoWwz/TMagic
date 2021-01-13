@@ -9,15 +9,17 @@ import { Playground } from 'docz'
 
 import Validator from './index'
 import Input from '../Input'
-import { Num } from './rules'
 
 <Playground>
   <Validator validates={{
     num: {
-      rule: Num,
-      message: "请输入纯数字:自定义提示"
+      message: "请输入纯数字"
+    },
+    min: {
+      value: 5,
+      message: "最小长度为5"
     }
   }}>
-    {/* <Input></Input> */}
+    <Input></Input>
   </Validator>
 </Playground>
