@@ -17,7 +17,13 @@ import Input from '../Input'
     },
     min: {
       value: 5,
-      message: "最小长度为5"
+      message: "最小为5"
+    },
+    custom: {
+      rule: (val) => {
+        return val.indexOf("1") > -1
+      },
+      message: "输入字符中必须包含1"
     }
   }}>
     <Input></Input>
