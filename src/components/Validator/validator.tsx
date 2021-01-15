@@ -1,7 +1,9 @@
-import React, { useMemo, useState } from 'react'
+import React, { cloneElement, useMemo, useState } from 'react'
 import classnames from 'classnames'
 
 import _ from './rules'
+
+import { InputProps } from '../Input/input'
 
 const ChildrenLegalName: Array<string> = [
   "Input"
@@ -13,16 +15,17 @@ interface IValidator {
   value?: number
 }
 
+type ValidatorExecutor = IValidator | boolean
+
 export interface ValidatorProps {
   validates: {
-    num?: IValidator,
-    min?: IValidator,
+    required?: ValidatorExecutor,
+    num?: ValidatorExecutor,
+    min?: ValidatorExecutor,
     custom?: IValidator
   },
   classNames?: string
 }
-
-interface FunctionComponentElement {}
 
 const Validator: React.FC<ValidatorProps> = props => {
   const { validates, classNames, children } = props
@@ -38,6 +41,23 @@ const Validator: React.FC<ValidatorProps> = props => {
 
   const validate = (val: string) => {
     let valueType = "string"
+
+    if(valideRules.includes("required")) {
+      const ruleValidator =  validates["required"] as ValidatorExecutor
+      // 如果为true 或者为 validtor构造器，则进入校验，否则跳过
+      if(ruleValidator) {
+        const requiredValid = _.isEmpty(val)
+        setValid(requiredValid)
+        let message = "不能为空"
+        if(typeof ruleValidator === 'object') {
+          message = ruleValidator.message || message;
+        }
+        if(!requiredValid) {
+          setMes(message)
+          return
+        }
+      }
+    }
 
     if(valideRules.includes("num")) {
       const { message } = validates["num"] as IValidator
@@ -66,12 +86,12 @@ const Validator: React.FC<ValidatorProps> = props => {
     if(valideRules.includes("custom")) {
       const { rule, message } = validates["custom"] as IValidator
       if(typeof rule !== 'function') {
-        console.error("warning: custom rule must be a function！")
+        console.error("Tmagic Warning: custom rule must be a function！")
         return
       }
       const customValid = rule(val);
       if(typeof customValid !== 'boolean') {
-        console.error("warning: custom rule must return a boolean！")
+        console.error("Tmagic Warning: custom rule must return a boolean！")
       }
       setValid(customValid)
       if(!customValid) {
@@ -80,18 +100,26 @@ const Validator: React.FC<ValidatorProps> = props => {
     }
   }
   // 渲染子组件
-  const ChildrenElement = children as React.FunctionComponentElement<FunctionComponentElement>
-  const { displayName = "" } = ChildrenElement.type
-  if(!ChildrenLegalName.includes(displayName)) {
-    console.error("Tmagic Warning: Validator component must accept legal verifiable children！")
+  const rendeFormComponent = () => {
+    const ChildElement = children as React.FunctionComponentElement<InputProps>
+    const { displayName = "" } = ChildElement.type
+    if(ChildrenLegalName.includes(displayName)) {
+      return cloneElement(ChildElement, {
+        defaultValue: "defaultValue",
+        onChange: changeInput,
+        className: valid ? "" : "tm-input__error"
+      })
+    } else {
+      console.error("Tmagic Warning: Validator component must accept legal verifiable children！")
+    }
   }
+
   const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     validate(e.target.value)
   }
   return (
     <div className={classes}>
-      { children }
-      <input type="text" onChange={changeInput} />
+      { rendeFormComponent() }
       {
         !valid && <div className="tm-vali__err">{ mes }</div>
       }
