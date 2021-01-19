@@ -22,22 +22,16 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import React from 'react';
 import classnames from 'classnames';
-var Button = function (props) {
-    var _a;
-    var className = props.className, disabled = props.disabled, size = props.size, type = props.type, children = props.children, href = props.href, restProps = __rest(props, ["className", "disabled", "size", "type", "children", "href"]);
-    var classes = classnames('tm-btn', className, (_a = {},
-        _a["tm-btn__" + type] = type,
-        _a["tm-btn__" + size] = size,
-        _a['disabled'] = type === 'link' && disabled,
-        _a));
-    if (type === "link") {
-        return (React.createElement("a", __assign({ href: href, className: classes }, restProps), children));
+var Input = function (props) {
+    var className = props.className, size = props.size, onChange = props.onChange, restProps = __rest(props, ["className", "size", "onChange"]);
+    console.log(props);
+    var classes = classnames("tm-input", className);
+    // 兼容value和defaultValue共存的情况
+    if ("value" in props) {
+        delete restProps.defaultValue;
     }
-    else {
-        return (React.createElement("button", __assign({ className: classes, disabled: disabled }, restProps), children));
-    }
+    return (React.createElement("div", { role: "search", className: classes },
+        React.createElement("input", __assign({ className: "tm-input__inner", type: "text", onChange: onChange }, restProps))));
 };
-Button.defaultProps = {
-    type: "default"
-};
-export default Button;
+Input.displayName = "Input";
+export default Input;
