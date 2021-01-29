@@ -17,7 +17,6 @@ const Input: React.FC<InputProps> = props => {
     onChange,
     ...restProps
   } = props
-  console.log(props)
   const classes = classnames("tm-input", className)
 
   // 兼容value和defaultValue共存的情况

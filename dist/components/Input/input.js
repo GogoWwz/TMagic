@@ -24,7 +24,6 @@ import React from 'react';
 import classnames from 'classnames';
 var Input = function (props) {
     var className = props.className, size = props.size, onChange = props.onChange, restProps = __rest(props, ["className", "size", "onChange"]);
-    console.log(props);
     var classes = classnames("tm-input", className);
     // 兼容value和defaultValue共存的情况
     if ("value" in props) {
