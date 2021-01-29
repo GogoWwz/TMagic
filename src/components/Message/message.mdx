@@ -2,13 +2,15 @@
 name: Message
 route: /Feedback/Message
 menu: Feedback
-edit: false
 ---
 
 import { Playground } from 'docz'
 import Button from '../Button'
 import Message from './message'
 
+# Message
+
+### 基本使用
 <Playground>
   <Button type="primary" onClick={() => Message.info()}>Show Info</Button>
   <Button type="success" onClick={() => Message.success()}>Show Success</Button>

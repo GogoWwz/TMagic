@@ -2,21 +2,37 @@
 name: Icon
 route: /Base/Icon
 menu: Base
-edit: false
 ---
 
 import { Playground } from 'docz'
+import DemoBlock from '..//DemoBlock/DemoBlock.tsx'
+import IconMap from './IconMap.ts'
 import Icon from './icon.tsx'
 
+# Icon
+
+### 颜色和尺寸
 <Playground>
-  <h2>Icon</h2>
-  <Icon icon="arrow-down" size="32" />
-  <Icon icon="arrow-left" size="32" />
-  <Icon icon="arrow-right" size="32" />
-  <Icon icon="arrow-up" size="32" />
-  <Icon icon="chevron-down" size="32" />
-  <Icon icon="chevron-left" size="32" />
-  <Icon icon="chevron-right" size="32" />
-  <Icon icon="chevron-up" size="32" />
-  <Icon icon="check" size="32" />
+  <DemoBlock>
+    <Icon icon="arrow-down" size="32" color="#4b5cc4" />
+    <Icon icon="arrow-up" size="32" color="#ed3321" />
+    <Icon icon="arrow-right" size="32" color="#fbda41" />
+    <Icon icon="arrow-left" size="32" color="#41b349" />
+  </DemoBlock>
 </Playground>
+
+### 图标集合
+<DemoBlock>
+  <ul className="tm-demo-iconlist">
+    {
+      IconMap.map(name => {
+        return (
+          <li key={name} className="tm-demo-icon">
+            <i><Icon icon={name} /></i>
+            <div>{name}</div>
+          </li>
+        )
+      })
+    }
+  </ul>
+</DemoBlock>

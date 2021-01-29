@@ -2,15 +2,14 @@
 name: Menu
 route: /Navigation/Menu
 menu: Navigation
-edit: false
 ---
 
 import { Playground } from 'docz'
 import Menu from './index'
 
+# Menu
+### 基本使用
 <Playground>
-  <h2>Menu</h2>
-
   <Menu defaultSeletedKey="menu2" onSelect={ index => console.log(index) }>
     <Menu.Item tag="menu1">menu1</Menu.Item>
     <Menu.Item tag="menu2">menu2</Menu.Item>
