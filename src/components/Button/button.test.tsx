@@ -36,4 +36,11 @@ describe("Button Test", () => {
     expect(element.tagName).toEqual("A")
     expect(element).toHaveClass("tm-btn tm-btn__link")
   })
+
+  it("是否正常加载不同尺寸按钮", () => {
+    const wrapper = render(<Button size="large">Size</Button>)
+    const element = wrapper.getByText("Size")
+    expect(element).toBeInTheDocument()
+    expect(element).toHaveClass("tm-btn tm-btn__large")
+  })
 })

@@ -40,4 +40,12 @@
   &.tm-btn__link {
     color: $blue;
   }
+  &.tm-btn__large {
+    padding: $btn-large-padding;
+    font-size: $btn-large-font;
+  }
+  &.tm-btn__small {
+    padding: $btn-small-padding;
+    font-size: $btn-small-font;
+  }
 }

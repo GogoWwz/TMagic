@@ -1,0 +1,7 @@
+.tm-demoblock {
+  .tm-btn {
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+}

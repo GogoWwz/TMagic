@@ -7,7 +7,7 @@ export default {
   // src: "./src",
   ignore: ["README.md"],
   themeConfig: {
-    showPlaygroundEditor: true
+    showPlaygroundEditor: false
   },
   menu: [
     "Start",
