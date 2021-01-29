@@ -27,7 +27,7 @@ button {
   border: 1px solid transparent;
   border-radius: 2px;
   white-space: nowrap;
-  padding: 6px 10px;
+  padding: 4px 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
   .tm-btn:hover {
@@ -48,6 +48,12 @@ button {
     background: #ed3321; }
   .tm-btn.tm-btn__link {
     color: #4b5cc4; }
+  .tm-btn.tm-btn__large {
+    padding: 8px 20px;
+    font-size: 16px; }
+  .tm-btn.tm-btn__small {
+    padding: 2px 5px;
+    font-size: 12px; }
 
 .tm-menu {
   display: flex;
@@ -89,7 +95,7 @@ button {
         bottom: -1px;
         left: 0;
         width: 100%;
-        height: 2.5px;
+        height: 2px;
         background: #4b5cc4;
         animation: scaleWidth .2s ease; }
     .tm-menu.tm-menu__horizontal .tm-submenu {
@@ -128,7 +134,7 @@ button {
         position: absolute;
         top: 0px;
         right: -1px;
-        width: 2.5px;
+        width: 2px;
         height: 100%;
         background: #4b5cc4;
         animation: scaleHeight .2s ease; }

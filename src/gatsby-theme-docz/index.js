@@ -2,8 +2,8 @@ import React from 'react'
 import { theme, useConfig, ComponentsProvider } from 'docz'
 import { Styled, ThemeProvider } from 'theme-ui'
 
-import defaultTheme from '~theme'
-import components from '~components'
+import defaultTheme from 'gatsby-theme-docz/src/theme'
+import components from 'gatsby-theme-docz/src/components/index.js'
 
 import { H3 } from './components'
 
