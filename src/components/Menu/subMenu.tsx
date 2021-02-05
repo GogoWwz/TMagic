@@ -62,7 +62,7 @@ const SubMenu: React.FC<SubMenuProps> = props => {
 
   return (
     <li className={classes} {...hoverEvents}>
-      <div { ...clickEvents }>SubMenu</div>
+      <div className="tm-submenu__title" { ...clickEvents }>SubMenu</div>
       { renderSubMenuItem() }
     </li>
   )

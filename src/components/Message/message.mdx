@@ -12,8 +12,8 @@ import Message from './message'
 
 ### 基本使用
 <Playground>
-  <Button type="primary" onClick={() => Message.info()}>Show Info</Button>
-  <Button type="success" onClick={() => Message.success()}>Show Success</Button>
-  <Button type="warning" onClick={() => Message.warning()}>Show Warning</Button>
-  <Button type="danger" onClick={() => Message.danger()}>Show Danger</Button>
+  <Button type="primary" onClick={() => Message.Info("这是 Info 弹框")}>Info</Button>
+  <Button type="success" onClick={() => Message.Success("这是 Success 弹框")}>Success</Button>
+  <Button type="warning" onClick={() => Message.Warning("这是 Warning 弹框")}>Warning</Button>
+  <Button type="danger" onClick={() => Message.Danger("这是 Danger 弹框")}>Danger</Button>
 </Playground>

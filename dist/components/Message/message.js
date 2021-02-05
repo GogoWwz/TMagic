@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import Icon from '../Icon';
 var MessageComponent = function (props) {
     var _a;
-    var className = props.className, type = props.type;
+    var className = props.className, type = props.type, children = props.children;
     var _b = useState(true), visible = _b[0], setVisible = _b[1];
     var classes = classnames("tm-message", className, (_a = {},
         _a["tm-message__" + type] = true,
@@ -20,27 +20,27 @@ var MessageComponent = function (props) {
         type === 'success' && React.createElement(Icon, { icon: "check-circle", className: "t-message__icon" }),
         type === 'warning' && React.createElement(Icon, { icon: "exclamation-triangle", className: "t-message__icon" }),
         type === 'danger' && React.createElement(Icon, { icon: "times-circle", className: "t-message__icon" }),
-        React.createElement("span", null, "\u8FD9\u662F\u6D88\u606F\u5F39\u6846\u7EC4\u4EF6"))), document.body));
+        React.createElement("span", null, children || '这是消息弹框组件'))), document.body));
 };
-var createMessage = function (type) {
+var createMessage = function (type, msg) {
     var div = document.createElement("div");
-    render(React.createElement(MessageComponent, { type: type }), div);
+    render(React.createElement(MessageComponent, { type: type }, msg), div);
     setTimeout(function () {
         unmountComponentAtNode(div);
     }, 2400);
 };
 var Message = {
-    info: function () {
-        createMessage("primary");
+    Info: function (msg) {
+        createMessage("primary", msg);
     },
-    success: function () {
-        createMessage("success");
+    Success: function (msg) {
+        createMessage("success", msg);
     },
-    warning: function () {
-        createMessage("warning");
+    Warning: function (msg) {
+        createMessage("warning", msg);
     },
-    danger: function () {
-        createMessage("danger");
+    Danger: function (msg) {
+        createMessage("danger", msg);
     }
 };
 export default Message;

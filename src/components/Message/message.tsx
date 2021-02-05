@@ -12,7 +12,7 @@ export interface MessageProps {
 }
 
 const MessageComponent: React.FC<MessageProps> = props => {
-  const { className, type } = props
+  const { className, type, children } = props
   const [visible, setVisible] = useState(true)
 
   const classes = classnames("tm-message", className, {
@@ -42,16 +42,16 @@ const MessageComponent: React.FC<MessageProps> = props => {
           type === 'danger' && <Icon icon="times-circle" className="t-message__icon"></Icon>
         }
         <span>
-          这是消息弹框组件
+          { children || '这是消息弹框组件' }
         </span>
       </div>
     ), document.body)
   )
 }
 
-const createMessage:(type: MessageTypes) => void = type => {
+const createMessage:(type: MessageTypes, msg?: string) => void = (type, msg) => {
   let div = document.createElement("div")
-  render(<MessageComponent type={type}></MessageComponent>, div)
+  render(<MessageComponent type={type}>{ msg }</MessageComponent>, div)
 
   setTimeout(() => {
     unmountComponentAtNode(div)
@@ -59,17 +59,17 @@ const createMessage:(type: MessageTypes) => void = type => {
 }
 
 const Message = {
-  info: () => {
-    createMessage("primary")
+  Info: (msg?: string) => {
+    createMessage("primary", msg)
   },
-  success: () => {
-    createMessage("success")
+  Success: (msg?: string) => {
+    createMessage("success", msg)
   },
-  warning:() => {
-    createMessage("warning")
+  Warning:(msg?: string) => {
+    createMessage("warning", msg)
   },
-  danger: () => {
-    createMessage("danger")
+  Danger: (msg?: string) => {
+    createMessage("danger", msg)
   }
 }
 

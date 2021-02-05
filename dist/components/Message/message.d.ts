@@ -5,9 +5,9 @@ export interface MessageProps {
     type?: MessageTypes;
 }
 declare const Message: {
-    info: () => void;
-    success: () => void;
-    warning: () => void;
-    danger: () => void;
+    Info: (msg?: string) => void;
+    Success: (msg?: string) => void;
+    Warning: (msg?: string) => void;
+    Danger: (msg?: string) => void;
 };
 export default Message;
