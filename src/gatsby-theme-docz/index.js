@@ -3,13 +3,14 @@ import { theme, useConfig, ComponentsProvider } from 'docz'
 import { Styled, ThemeProvider } from 'theme-ui'
 
 import defaultTheme from 'gatsby-theme-docz/src/theme'
-import components from 'gatsby-theme-docz/src/components/index.js'
+// import components from 'gatsby-theme-docz/src/components/index.js'
 
-import { H3 } from './components'
+import { H3, Layout } from './components'
 
 const ComponentsMerge = {
-  ...components,
-  h3: H3
+  // ...components,
+  h3: H3,
+  layout: Layout
 }
 
 const Theme = ({ children }) => {

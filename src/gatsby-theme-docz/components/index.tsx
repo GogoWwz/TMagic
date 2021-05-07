@@ -1,7 +1,6 @@
 import H3 from './H3'
-
-import './index.scss'
+import Layout from './Layout/index'
 
 export {
-  H3
+  H3, Layout
 }
